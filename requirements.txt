@@ -1,0 +1,9 @@
+EasyProcess==1.1
+entrypoint2==1.0
+numpy==1.22.4
+pandas==1.4.2
+patool==1.12
+python-dateutil==2.8.2
+pytz==2022.1
+pyunpack==0.2.2
+six==1.16.0
