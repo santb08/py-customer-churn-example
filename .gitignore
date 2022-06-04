@@ -1,3 +1,8 @@
 decompressed
 venv
 .DS_Store
+__pycache__
+CHURN
+**.csv
+**.csv.7z
+**.zip

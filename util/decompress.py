@@ -6,6 +6,7 @@ import py7zr
 from common import *
 
 KAGGLE_FOLDER = ''
+COMPRESSED_FILES_EXT = 'csv.7z'
 
 try:
     KAGGLE_FOLDER = os.environ['KAGGLE_FOLDER']
@@ -13,17 +14,8 @@ except:
     print('No env variable for KAGGLE_FOLDER, setting manually', os.environ)
     KAGGLE_FOLDER = input('Enter KAGGLE_FOLDER: ')
 
-COMPRESSED_FILES_EXT = 'csv.7z'
-DATABASE_FILES_MAPPER = {
-    TABLE_TRANSACTIONS: ['transactions', 'transactions_v2'],
-    TABLE_USER_LOGS: ['user_logs', 'user_logs_v2'],
-    TABLE_MEMBERS: ['members_v3'],
-}
-
 
 def load_data():
-    DECOMPRESS_FOLDER = 'decompressed'
-
     # Create decompress folder if not exists
     if not os.path.exists(DECOMPRESS_FOLDER):
         os.makedirs(DECOMPRESS_FOLDER)

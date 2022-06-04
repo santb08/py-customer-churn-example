@@ -1,9 +1,24 @@
 TABLE_TRANSACTIONS = 'TRANSACTIONS'
 TABLE_USER_LOGS = 'USER_LOGS'
 TABLE_MEMBERS = 'MEMBERS'
+TABLE_TRANSACTIONS_ALL = 'TRANSACTIONS_ALL'
+TABLE_USER_LOGS_ALL = 'user_logs_all'
+
+DATABASE_FILES_MAPPER = {
+    # TABLE_TRANSACTIONS: ['transactions', 'transactions_v2'],
+    TABLE_TRANSACTIONS: ['transactions_v2'],
+    # TABLE_USER_LOGS: ['user_logs', 'user_logs_v2'],
+    TABLE_USER_LOGS: ['user_logs_v2'],
+    TABLE_MEMBERS: ['members_v3'],
+}
+
+DECOMPRESS_FOLDER = 'decompressed'
 
 __all__ = [
     'TABLE_TRANSACTIONS',
     'TABLE_USER_LOGS',
     'TABLE_MEMBERS',
+    'TABLE_USER_LOGS_ALL',
+    'DATABASE_FILES_MAPPER',
+    'DECOMPRESS_FOLDER',
 ]
