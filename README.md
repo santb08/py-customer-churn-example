@@ -52,3 +52,5 @@ Finally we can run our prediction
 ```
 python prediction_engineering.py
 ```
+
+And see the results in `prediction.csv` new file.
