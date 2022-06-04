@@ -56,4 +56,4 @@ print(transactions_all) # [1197050 rows x 9 columns]
 
 
 # Save to csv
-transactions_all.to_csv('transactions_all.csv', index=False)
+transactions_all.to_csv('views/transactions_all.csv', index=False)
